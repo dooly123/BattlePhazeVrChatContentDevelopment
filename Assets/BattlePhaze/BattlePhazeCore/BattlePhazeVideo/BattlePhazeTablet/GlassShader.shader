@@ -1,53 +1,32 @@
 ﻿Shader "BattlePhaze/GlassShader" {
 	Properties{
- _Cube("Reflection Map", Cube) = "" {}
+		_SpecColor("Specular Color", Color) = (0.5, 0.5, 0.5, 1)
+		_Shininess("Shininess", Range(0.01, 1)) = 0.078125
 	}
 		SubShader{
-		   Pass {
-			  CGPROGRAM
+			Tags {
+				"Queue" = "Transparent"
+				"IgnoreProjector" = "True"
+				"RenderType" = "Transparent"
+			}
+			LOD 300
 
-			  #pragma vertex vert  
-			  #pragma fragment frag 
+			CGPROGRAM
+				#pragma surface surf BlinnPhong decal:add nolightmap
 
-			  #include "UnityCG.cginc"
+				half _Shininess;
 
-			  // User-specified uniforms
-			  uniform samplerCUBE _Cube;
+				struct Input {
+					float dummy;
+				};
 
-			  struct vertexInput {
-				 float4 vertex : POSITION;
-				 float3 normal : NORMAL;
-			  };
-			  struct vertexOutput {
-				 float4 pos : SV_POSITION;
-				 float3 normalDir : TEXCOORD0;
-				 float3 viewDir : TEXCOORD1;
-			  };
-
-			  vertexOutput vert(vertexInput input)
-			  {
-				 vertexOutput output;
-
-				 float4x4 modelMatrix = unity_ObjectToWorld;
-				 float4x4 modelMatrixInverse = unity_WorldToObject;
-
-				 output.viewDir = mul(modelMatrix, input.vertex).xyz
-					- _WorldSpaceCameraPos;
-				 output.normalDir = normalize(
-					mul(float4(input.normal, 0.0), modelMatrixInverse).xyz);
-				 output.pos = UnityObjectToClipPos(input.vertex);
-				 return output;
-			  }
-
-			  float4 frag(vertexOutput input) : COLOR
-			  {
-				 float refractiveIndex = 1.5;
-				 float3 refractedDir = refract(normalize(input.viewDir),
-					normalize(input.normalDir), 1.0 / refractiveIndex);
-				 return texCUBE(_Cube, refractedDir);
-			  }
-
-			  ENDCG
-		   }
+				void surf(Input IN, inout SurfaceOutput o) {
+					o.Albedo = 0;
+					o.Gloss = 1;
+					o.Specular = _Shininess;
+					o.Alpha = 0;
+				}
+			ENDCG
 	}
+		FallBack "Transparent/VertexLit"
 }

@@ -3784,7 +3784,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -4003,7 +4003,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -4296,7 +4296,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -4412,7 +4412,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -4512,7 +4512,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -4984,7 +4984,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Resync
       EventType: 14
@@ -5105,7 +5105,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Previous
       EventType: 14
@@ -5266,7 +5266,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -5327,7 +5327,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -5400,7 +5400,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: FastForward
       EventType: 14
@@ -5488,7 +5488,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -5682,8 +5682,8 @@ MonoBehaviour:
   ShowHelp: 1
   TakesOwnershipIfNecessary: 0
   Triggers:
-  - TriggerType: 5
-    BroadcastType: 7
+  - TriggerType: 0
+    BroadcastType: 4
     Events:
     - Name: Play
       EventType: 14
@@ -5817,7 +5817,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Rewind
       EventType: 14
@@ -5941,7 +5941,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -6002,7 +6002,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: RewindSeconds
       EventType: 14
@@ -6210,7 +6210,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -6768,7 +6768,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Play
       EventType: 14
@@ -6952,7 +6952,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Pause
       EventType: 14
@@ -7099,7 +7099,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -7455,7 +7455,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -8107,7 +8107,11 @@ MonoBehaviour:
     Duration: 0
     Timer: 0
     DataElementIdx: 0
-    DataStorageShadowValues: []
+    DataStorageShadowValues:
+    - ParameterString: 
+      ParameterBoolOp: 
+      ParameterFloat: 
+      ParameterInt: 
     AfterSeconds: 0
     ProbabilityLock: 
     Probabilities: []
@@ -8381,7 +8385,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Stop
       EventType: 14
@@ -8442,7 +8446,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -8506,7 +8510,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: FastForwardSeconds
       EventType: 14
@@ -8641,7 +8645,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Skip
       EventType: 14
@@ -9506,7 +9510,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: 
       EventType: 10
@@ -9691,7 +9695,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -10375,7 +10379,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
@@ -11077,7 +11081,7 @@ MonoBehaviour:
   TakesOwnershipIfNecessary: 1
   Triggers:
   - TriggerType: 0
-    BroadcastType: 7
+    BroadcastType: 4
     Events:
     - Name: Next
       EventType: 14
