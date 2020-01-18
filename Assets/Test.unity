@@ -349,7 +349,7 @@ Prefab:
     - target: {fileID: 114409779611674446, guid: 9cb1e183d39ba432db5c583c4548819c,
         type: 2}
       propertyPath: DynamicMaterials.Array.size
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114409779611674446, guid: 9cb1e183d39ba432db5c583c4548819c,
         type: 2}
@@ -4917,11 +4917,21 @@ Prefab:
         type: 2}
       propertyPath: DynamicMaterials.Array.data[8]
       value: 
+      objectReference: {fileID: 2100000, guid: ac0eac21e0663d74687e357fbb7ccc51, type: 2}
+    - target: {fileID: 114409779611674446, guid: 9cb1e183d39ba432db5c583c4548819c,
+        type: 2}
+      propertyPath: DynamicMaterials.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 206c3e32efb91db4e9626b54afcc6088, type: 2}
+    - target: {fileID: 114409779611674446, guid: 9cb1e183d39ba432db5c583c4548819c,
+        type: 2}
+      propertyPath: DynamicMaterials.Array.data[10]
+      value: 
       objectReference: {fileID: 2100000, guid: c6cac40d55b585c4798abb4aef4c4e93, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cb1e183d39ba432db5c583c4548819c, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1492942503
+--- !u!1001 &1217099382
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
